@@ -1,13 +1,15 @@
-#' Title
+#' Silly Printer function
 #'
-#' @param r
-#' @param x
-#' @param y
+#' @param r what you want in the second column
+#' @param x what you want in the second column
 #'
-#' @return
+#' @return A tibble
 #' @export
 #'
+#' @importFrom tibble as_data_frame
 #' @examples
-printer <- function(r, x, y){
+#' printer(x = rnorm(5), r = rnorm(5))
+printer <- function(r, x){
+  x <- tibble::as_data_frame(x = x, r = r)
   print(paste0("x = ", x))
 }

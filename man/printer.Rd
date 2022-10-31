@@ -2,13 +2,21 @@
 % Please edit documentation in R/printer.R
 \name{printer}
 \alias{printer}
-\title{Title}
+\title{Silly Printer function}
 \usage{
-printer(r, x, y)
+printer(r, x)
 }
 \arguments{
-\item{y}{}
+\item{r}{what you want in the second column}
+
+\item{x}{what you want in the second column}
+}
+\value{
+A tibble
 }
 \description{
-Title
+Silly Printer function
+}
+\examples{
+printer(x = rnorm(5), r = rnorm(5))
 }

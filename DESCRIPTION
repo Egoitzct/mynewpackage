@@ -11,3 +11,9 @@ LazyData: true
 RoxygenNote: 7.2.1
 URL: https://github.com/Egoitzct/mynewpackage
 BugReports: https://github.com/Egoitzct/mynewpackage/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    tibble
